@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KitabKhazana — Buy & Sell Books Online | Client Enquiry Portal</title>
+  <meta name="description"
+    content="KitabKhazana is a premier book marketplace and service portal where readers discover curated books, request titles, and submit sales enquiries.">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS: Container grid and utility classes -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons: Vector icon library -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/styles.css">
+
+
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+  <div class="grain"></div>
+  <header>
+    <nav class="nav" id="mainNav" aria-label="Main Navigation">
+      <a href="index.html" class="logo" title="KitabKhazana Home">KITAB<span
+          style="color: var(--accent)">KHAZANA</span></a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#catalogue">Browse Books</a></li>
+        <li><a href="#sell">Sell Books</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#enquiry">Enquire</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme"
+          title="Toggle dark/light theme">
+          <i class="bi bi-moon-fill icon-moon"></i>
+          <i class="bi bi-sun-fill icon-sun"></i>
+        </button>
+        <button class="cart-pill" id="cartBtn" aria-label="View Cart">
+          <i class="bi bi-cart3"></i> Cart <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <a href="#enquiry" class="contact-pill" id="enquiryNavBtn">
+          <i class="bi bi-chat-dots"></i> Enquire
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile Navigation">
+    <a href="#home">Home</a>
+    <a href="#catalogue">Browse Books</a>
+    <a href="#sell">Sell Books</a>
+    <a href="#about">About Us</a>
+    <a href="#enquiry">Submit Enquiry</a>
+  </div>
+  <main>
+    <section class="hero" id="home">
+      <div class="container text-center pt-5 mt-4">
+        <h1 class="headline" id="headline">
+          <div class="line line-1">
+            <span class="word"><span>Discover</span></span>
+            <span class="word"><span>Books</span></span>
+          </div>
+          <div class="line line-2 d-flex justify-content-center align-items-center gap-3 my-2 flex-wrap">
+            <span class="hero-quote-pill" id="inlineImg">
+              <span class="quote-icon">📖</span>
+              <span class="txt">"A reader lives a<br />thousand lives"</span>
+            </span>
+            <span class="word"><span>That</span></span>
+            <span class="idea-pill" id="ideaPill">
+              <span class="txt">📚 Your next<br />great read</span>
+            </span>
+          </div>
+          <div class="line line-3">
+            <span class="word"><span class="headline-accent">Inspire</span></span>
+          </div>
+        </h1>
+        <p class="hero-sub mt-4 lead mx-auto">Buy &amp; sell pre-loved and new books at student-friendly prices. Your
+          trusted community book portal awaits.</p>
+        <div class="hero-btns mt-4 d-flex justify-content-center gap-3">
+          <a href="#catalogue" class="btn-hero-primary btn btn-dark rounded-pill px-4 py-2">Browse Collection <i
+              class="bi bi-arrow-right"></i></a>
+          <a href="#enquiry" class="btn-hero-secondary btn btn-outline-dark rounded-pill px-4 py-2">Enquire to Sell</a>
+        </div>
+      </div>
+    </section>
+    <section class="below container my-5 py-4">
+      <div class="why-grid">
+        <!-- Left Column -->
+        <div class="why-col why-left reveal-on-scroll">
+          <div class="why-block">
+            <h3 class="fw-bold">Why KitabKhazana?</h3>
+            <p class="text-muted">Curated collections of the best reads, carefully inspected for quality and neatly
+              categorized for your convenience.</p>
+            <div class="mini-card d-flex align-items-center mt-4 p-3 border rounded shadow-sm bg-white">
+              <span class="badge bg-primary me-3 px-2 py-2">History</span>
+              <span class="fw-medium">Deep dive into the past</span>
+            </div>
+          </div>
+        </div>
+        <!-- Center Column -->
+        <div class="why-col why-center text-center reveal-on-scroll">
+          <div class="try-pill-wrap mb-3">
+            <a href="#catalogue" class="btn btn-sm btn-outline-dark rounded-pill px-3">Shop Now</a>
+          </div>
+          <div class="big-img-area position-relative d-inline-block">
+            <img src="assets/images/book1.webp" alt="Featured Book - The Penguin History of Early India"
+              class="img-fluid rounded shadow-lg" style="max-height: 340px; object-fit: cover;">
+            <a href="#enquiry"
+              class="buy-now-btn btn btn-dark position-absolute top-50 start-50 translate-middle rounded-pill px-4 py-2 shadow text-decoration-none">Enquire
+              ₹250</a>
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div class="why-col why-right reveal-on-scroll">
+          <div class="stats-block mb-4">
+            <h2 class="display-4 fw-bold mb-0 text-dark" data-count="500">500+</h2>
+            <p class="text-muted fw-medium fs-5">Books &amp; counting</p>
+          </div>
+          <div class="trust-block d-flex align-items-center mb-4">
+            <div class="avatar-stack d-flex me-3">
+              <div class="avatar bg-primary rounded-circle shadow-sm"
+                style="width: 35px; height: 35px; border: 2px solid #fff; margin-left: 0; z-index: 3;"></div>
+              <div class="avatar bg-danger rounded-circle shadow-sm"
+                style="width: 35px; height: 35px; border: 2px solid #fff; margin-left: -12px; z-index: 2;"></div>
+              <div class="avatar bg-success rounded-circle shadow-sm"
+                style="width: 35px; height: 35px; border: 2px solid #fff; margin-left: -12px; z-index: 1;"></div>
+            </div>
+            <span class="fw-medium text-muted">Trusted by readers</span>
+          </div>
+          <div class="mini-card p-3 border rounded shadow-sm bg-white">
+            <span class="badge bg-danger mb-2">New Arrival</span>
+            <p class="mb-0 fw-bold">100 Must-Read Historical Novels</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="catalogue bg-light py-5" id="catalogue">
+      <div class="container my-4">
+        <div class="section-header text-center mb-5 reveal-on-scroll">
+          <div class="eyebrow text-uppercase fw-bold text-muted mb-2" style="letter-spacing: 1px; font-size: 0.85rem;">
+            Our Collection · Featured Books</div>
+          <h2 class="display-5 fw-bold mb-3">Less searching.<br />More reading.</h2>
+          <p class="text-muted mx-auto" style="max-width: 600px;">Hand-picked books across history, self-help, and
+            fiction — all at student-friendly prices. Select any book to enquire directly.</p>
+        </div>
+        <div class="book-grid" id="bookGrid">
+        </div>
+      </div>
+    </section>
+    <section class="about py-5" id="about">
+      <div class="container my-5">
+        <div class="reveal-on-scroll">
+          <div class="eyebrow text-uppercase fw-bold text-muted mb-2" style="font-size: 0.85rem; letter-spacing: 1px;">
+            About · KitabKhazana</div>
+          <h2 class="display-6 fw-bold mb-4">Where Books Find New Homes</h2>
+          <div class="row">
+            <div class="col-lg-8">
+              <p class="lead text-dark">KitabKhazana was born out of a simple idea: books are meant to be read, not left
+                collecting dust on a shelf. We connect avid readers looking for affordable gems with people who want to
+                pass on their favorites.</p>
+              <p class="text-muted">Our platform ensures that every book listed is carefully curated and inspected,
+                giving you access to an ever-growing library of history, fiction, and self-improvement — all without
+                breaking the bank.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-grid mt-5">
+          <div class="feature-card p-4 border rounded shadow-sm text-center h-100 bg-white reveal-on-scroll">
+            <i class="bi bi-book display-4 text-dark mb-3"></i>
+            <h4 class="h5 fw-bold">Curated Collection</h4>
+            <p class="text-muted small mb-0">Hand-picked selections to ensure you only get the highest quality reads.
+            </p>
+          </div>
+          <div class="feature-card p-4 border rounded shadow-sm text-center h-100 bg-white reveal-on-scroll">
+            <i class="bi bi-tag display-4 text-dark mb-3"></i>
+            <h4 class="h5 fw-bold">Best Prices</h4>
+            <p class="text-muted small mb-0">Student-friendly pricing on all pre-loved and brand-new books.</p>
+          </div>
+          <div class="feature-card p-4 border rounded shadow-sm text-center h-100 bg-white reveal-on-scroll">
+            <i class="bi bi-people display-4 text-dark mb-3"></i>
+            <h4 class="h5 fw-bold">Trusted Community</h4>
+            <p class="text-muted small mb-0">Join hundreds of active readers safely buying and selling their books.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section bg-dark text-white py-5" id="sell">
+      <div class="container py-5">
+        <div class="cta-inner row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="display-5 fw-bold lh-sm mb-0">Have books collecting dust?<br /><em class="text-warning"
+                style="font-style: normal;">Sell them here.</em></h2>
+          </div>
+          <div class="cta-right col-lg-5 offset-lg-1">
+            <p class="lead mb-4 opacity-75">List your books on KitabKhazana. Reach hundreds of readers looking for their
+              next great read.</p>
+            <a href="#enquiry" class="cta-btn btn btn-warning btn-lg rounded-pill px-4 fw-bold">Submit a Selling Enquiry
+              <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="enquiry bg-light py-5" id="enquiry">
+      <div class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center mb-5 reveal-on-scroll">
+              <h2 class="fw-bold">Client Service &amp; Order Enquiry</h2>
+              <p class="text-muted">Interested in purchasing a book or listing your titles? Complete the form below for
+                instant client-side validation and quick WhatsApp confirmation.</p>
+            </div>
+            <form id="enquiryForm" class="bg-white p-4 p-md-5 rounded-4 shadow-sm border reveal-on-scroll" novalidate>
+              <div class="row mb-4">
+                <div class="col-md-4 mb-3 mb-md-0">
+                  <label for="name" class="form-label fw-medium">Full Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="name" placeholder="John Doe" required minlength="3">
+                  <div class="invalid-feedback">Please enter at least 3 characters.</div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                  <label for="email" class="form-label fw-medium">Email Address <span
+                      class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="john@example.com" required>
+                  <div class="invalid-feedback">Please provide a valid email.</div>
+                </div>
+                <div class="col-md-4">
+                  <label for="phone" class="form-label fw-medium">Phone Number <span
+                      class="text-danger">*</span></label>
+                  <input type="tel" class="form-control" id="phone" placeholder="10-digit mobile" required
+                    pattern="[0-9]{10}">
+                  <div class="invalid-feedback">Enter a 10-digit number.</div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <label for="bookSelect" class="form-label fw-medium">Select Book / Service Interest <span
+                    class="text-danger">*</span></label>
+                <select class="form-select" id="bookSelect" required>
+                  <option value="" selected disabled>Choose a book from the catalogue or general enquiry...</option>
+                  <option value="1">The Penguin History of Early India — ₹250</option>
+                  <option value="2">A History of Ancient and Early Medieval India — ₹280</option>
+                  <option value="3">100 Must-Read Historical Novels — ₹220</option>
+                  <option value="4">Train Your Brain — ₹210</option>
+                  <option value="5">Anxious People — ₹299</option>
+                  <option value="sell">Bulk / Sell Books Enquiry (General)</option>
+                </select>
+                <div class="invalid-feedback">Please select an item or enquiry type.</div>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label fw-medium d-block">Preferred Book Condition <span
+                    class="text-danger">*</span></label>
+                <div class="condition-radio-group d-flex flex-wrap gap-4 pt-1">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="bookCondition" id="conditionNew"
+                      value="Brand New" checked>
+                    <label class="form-check-label" for="conditionNew">Brand New</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="bookCondition" id="conditionLikeNew"
+                      value="Used — Like New">
+                    <label class="form-check-label" for="conditionLikeNew">Used — Like New</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="bookCondition" id="conditionGood"
+                      value="Used — Good">
+                    <label class="form-check-label" for="conditionGood">Used — Good</label>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <label for="message" class="form-label fw-medium">Message / Notes <span class="text-muted fw-normal"
+                    style="font-size: 0.85rem;">(Optional)</span></label>
+                <textarea class="form-control" id="message" rows="3"
+                  placeholder="Special requests, specific edition preferences, or delivery instructions..."
+                  maxlength="500"></textarea>
+                <div class="text-end text-muted small mt-1"><span id="charCount">0</span>/500 characters</div>
+              </div>
+
+              <div class="d-grid">
+                <button type="submit" class="btn btn-success btn-lg rounded-pill fw-bold" id="submitEnquiryBtn">
+                  Submit Enquiry <i class="bi bi-whatsapp ms-1"></i>
+                </button>
+              </div>
+              <p class="text-center text-muted small mt-4 mb-0"><i class="bi bi-info-circle"></i> Instant WhatsApp
+                dispatch and client-side confirmation.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar" aria-label="Shopping Cart Drawer">
+    <div class="cart-header">
+      <h3 class="h5 mb-0 fw-bold"><i class="bi bi-cart3 me-2"></i> Selected Enquiries</h3>
+      <button class="cart-close btn btn-link text-dark p-0 border-0" id="cartClose" aria-label="Close cart drawer"><i
+          class="bi bi-x-lg fs-5"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty text-center py-5" id="cartEmpty">
+        <i class="bi bi-cart-x mb-3 d-block" style="font-size:48px;color:var(--text-muted)"></i>
+        <p class="text-muted mb-4">No books added yet</p>
+        <a href="#catalogue" class="btn btn-outline-dark rounded-pill px-4" id="closeCartAndBrowse">Browse Books</a>
+      </div>
+    </div>
+    <div class="cart-footer border-top p-4 bg-white" id="cartFooter" style="display: none;">
+      <div class="cart-total d-flex justify-content-between align-items-center mb-3">
+        <span class="fw-bold fs-5">Estimated Total:</span>
+        <span class="cart-total-price fw-bold fs-4 text-dark" id="cartTotal">₹0</span>
+      </div>
+      <button class="btn btn-success w-100 rounded-pill py-2 mb-2 fw-bold" id="checkoutBtn"><i
+          class="bi bi-whatsapp me-2"></i> Enquire via WhatsApp</button>
+      <button class="btn btn-link w-100 text-muted text-decoration-none" id="clearCartBtn">Clear Selection</button>
+    </div>
+  </aside>
+  <footer class="footer text-white pt-5 pb-3" style="background-color: #111;">
+    <div class="container pt-3">
+      <div class="row gy-4 mb-5">
+        <div class="col-lg-4 pe-lg-5">
+          <div class="fs-4 fw-bold mb-3" style="letter-spacing: 1px;">KITAB<span class="text-warning">KHAZANA</span>
+          </div>
+          <p class="text-light opacity-75 small">Your treasure trove of knowledge. Discover, buy, and sell pre-loved and
+            new books easily, securely, and affordably.</p>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="mb-4 fw-bold">Navigation</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+            <li><a href="#home" class="text-decoration-none text-light opacity-75">Home</a></li>
+            <li><a href="#catalogue" class="text-decoration-none text-light opacity-75">Browse Catalogue</a></li>
+            <li><a href="#about" class="text-decoration-none text-light opacity-75">About Platform</a></li>
+            <li><a href="#enquiry" class="text-decoration-none text-light opacity-75">Client Enquiry Form</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="mb-4 fw-bold">Contact &amp; Support</h5>
+          <ul class="list-unstyled d-flex flex-column gap-3 text-light opacity-75 small mb-0">
+            <li><i class="bi bi-envelope me-2 text-warning"></i> hello@kitabkhazana.com</li>
+            <li><i class="bi bi-telephone me-2 text-warning"></i> +91 98765 43210</li>
+            <li><a href="#enquiry" class="text-decoration-none text-success fw-bold d-inline-block mt-1"><i
+                  class="bi bi-whatsapp me-1"></i> Send Direct Enquiry</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary opacity-25 mb-4">
+      <div class="text-center text-light opacity-50 small">&copy; <span id="currentYear">2026</span> KitabKhazana.
+        Client Assignment Submission. All rights reserved.</div>
+    </div>
+  </footer>
+  <div id="toastContainer" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1090;"></div>
+  <div
+    class="modal-overlay position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 d-none align-items-center justify-content-center"
+    id="orderModal" style="z-index: 1100; backdrop-filter: blur(4px);">
+    <div class="modal-content bg-white rounded-4 shadow-lg p-4 position-relative" style="max-width: 420px; width: 92%;">
+      <button class="modal-close btn btn-link text-dark position-absolute top-0 end-0 m-3 p-0 border-0" id="modalClose"
+        aria-label="Close modal"><i class="bi bi-x-lg"></i></button>
+      <div class="modal-body text-center py-4" id="modalBody">
+        <i class="bi bi-check-circle text-success" style="font-size: 3rem;"></i>
+        <h4 class="mt-3 fw-bold">Success!</h4>
+        <p class="text-muted mb-0 mt-2">Your enquiry was submitted successfully.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
